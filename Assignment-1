@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+  int num, i, *ptr, sum=0;
+
+  printf("Enter the number of elements: ");
+  scanf("%d", &num);
+  ptr= (int*) malloc (num*sizeof(int));
+  printf("Enter %d elements :\n",num);
+  for(i=0;i<num;i++)
+  {
+     scanf("%d",ptr+i);
+     sum += *(ptr+i);
+  }
+  printf("Sum= %d",sum);
+  return 0;
+}
+Date: Sep 7th
+Assignment Link
+https://forms.gle/eZsRb9zeCSwb1fdE6
+
+1. Read a number n. if the number is in fibonacci series print "Yes" otherwise "No"
+Example:
+Input:
+5
+Output:
+Yes
+Explanation: if you take fibonacci series 0 0 1 1 2 3 5. Because 5 is there is fibonacci series , it prints Yes
+Example 2:
+Input:
+4
+Output:
+No
+Explanation:if you take fibonacci series 0 0 1 1 2 3 5. Because 4 is there is not present in fibonacci series , it prints No.
+
+
